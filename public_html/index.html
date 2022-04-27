@@ -63,7 +63,7 @@ and open the template in the editor.
                 var jsonStrObj = {
                     empId: empIdVar,
                     empName: empNameVar,
-                    empEmail: empEmailVar,
+                    empEmail: empEmailVar
                 };
                 return JSON.stringify(jsonStrObj);
             }
@@ -111,7 +111,7 @@ and open the template in the editor.
                     return;
                 }
                 var putReqStr = createPUTRequest("90939133|-31949285999137870|90946093",
-                        jsonStr, "Employee", "Emp-Rel");
+                        jsonStr, "Sample", "Emp-Rel");
                 alert(putReqStr);
                 jQuery.ajaxSetup({async: false});
                 var resultObj = executeCommand(putReqStr,
